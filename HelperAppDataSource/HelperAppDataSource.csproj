@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{11693C75-F1BF-4D11-8F3B-49EC22ED5A63}</ProjectGuid>
+    <ProjectGuid>{119E884D-1547-4D10-954C-6F19F75DB5E0}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>HelperAppDL</RootNamespace>
-    <AssemblyName>HelperAppDL</AssemblyName>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelperAppDataSource</RootNamespace>
+    <AssemblyName>HelperAppDataSource</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,12 +30,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,19 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangeResource.cs" />
-    <Compile Include="Helpers\IChangeResource.cs" />
-    <Compile Include="Helpers\IRetrieveResource.cs" />
-    <Compile Include="Models\Advertisement.cs" />
-    <Compile Include="Models\HelperUser.cs" />
+    <Compile Include="IDataSource.cs" />
+    <Compile Include="IHelperDataRequest.cs" />
+    <Compile Include="IHelperDataResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RetrieveResource.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HelperAppDataSource\HelperAppDataSource.csproj">
-      <Project>{119e884d-1547-4d10-954c-6f19f75db5e0}</Project>
-      <Name>HelperAppDataSource</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

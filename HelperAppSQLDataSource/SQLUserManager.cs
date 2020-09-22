@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using HelperAppDL.Helpers;
+using HelperAppDataSource;
 
-namespace HelperAppDL.SQL
+namespace HelperAppSQLDataSource
 {
-    public class SQLAdManager : IDataSource
+    public class SQLUserManager : IDataSource
     {
         public IHelperDataResponse AddResource(IHelperDataRequest request)
         {

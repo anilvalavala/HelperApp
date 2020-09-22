@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using HelperAppDL.Helpers;
+using HelperAppDataSource;
 
-namespace HelperAppDL.SQL
+namespace HelperAppSQLDataSource
 {
     public class SQLDataSource : IDataSource
     {
-        string connectionString = @"Data Source=local;Initial Catalog = HelperApp;User ID = sa;Password=india123";
+        //string connectionString = @"Data Source=local;Initial Catalog = HelperApp;User ID = sa;Password=india123";
 
         //open connection and pass it on to subsequent classes
 
@@ -52,6 +52,9 @@ namespace HelperAppDL.SQL
             {
                 case "AdRequest":
                     objectToReturn = new SQLAdManager();
+                    break;
+                case "UserRequest":
+                    objectToReturn = new SQLUserManager();
                     break;
                 default:
                     objectToReturn = null;

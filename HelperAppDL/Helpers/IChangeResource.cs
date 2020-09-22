@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using HelperAppDataSource;
+
 namespace HelperAppDL.Helpers
 {
     public interface IChangeResource<T, U> where T: IHelperDataRequest

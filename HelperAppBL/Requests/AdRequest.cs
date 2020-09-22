@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-using HelperAppDL.Helpers;
+using HelperAppDataSource;
 
 namespace HelperAppBL.Requests
 {

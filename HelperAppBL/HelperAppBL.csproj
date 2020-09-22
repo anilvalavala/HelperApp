@@ -57,9 +57,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HelperAppDataSource\HelperAppDataSource.csproj">
+      <Project>{119e884d-1547-4d10-954c-6f19f75db5e0}</Project>
+      <Name>HelperAppDataSource</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HelperAppDL\HelperAppDL.csproj">
       <Project>{11693c75-f1bf-4d11-8f3b-49ec22ed5a63}</Project>
       <Name>HelperAppDL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelperAppSQLDataSource\HelperAppSQLDataSource.csproj">
+      <Project>{0ad6bd54-2cdb-40df-a571-1b29fcc9573d}</Project>
+      <Name>HelperAppSQLDataSource</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

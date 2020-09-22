@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{11693C75-F1BF-4D11-8F3B-49EC22ED5A63}</ProjectGuid>
+    <ProjectGuid>{0AD6BD54-2CDB-40DF-A571-1B29FCC9573D}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>HelperAppDL</RootNamespace>
-    <AssemblyName>HelperAppDL</AssemblyName>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelperAppSQLDataSource</RootNamespace>
+    <AssemblyName>HelperAppSQLDataSource</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,12 +30,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,13 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangeResource.cs" />
-    <Compile Include="Helpers\IChangeResource.cs" />
-    <Compile Include="Helpers\IRetrieveResource.cs" />
-    <Compile Include="Models\Advertisement.cs" />
-    <Compile Include="Models\HelperUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RetrieveResource.cs" />
+    <Compile Include="SQLAdManager.cs" />
+    <Compile Include="SQLDataSource.cs" />
+    <Compile Include="SQLUserManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HelperAppDataSource\HelperAppDataSource.csproj">

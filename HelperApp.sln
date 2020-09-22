@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperAppBL", "HelperAppBL\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperAppDL", "HelperAppDL\HelperAppDL.csproj", "{11693C75-F1BF-4D11-8F3B-49EC22ED5A63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperAppDataSource", "HelperAppDataSource\HelperAppDataSource.csproj", "{119E884D-1547-4D10-954C-6F19F75DB5E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperAppSQLDataSource", "HelperAppSQLDataSource\HelperAppSQLDataSource.csproj", "{0AD6BD54-2CDB-40DF-A571-1B29FCC9573D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{11693C75-F1BF-4D11-8F3B-49EC22ED5A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11693C75-F1BF-4D11-8F3B-49EC22ED5A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11693C75-F1BF-4D11-8F3B-49EC22ED5A63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{119E884D-1547-4D10-954C-6F19F75DB5E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{119E884D-1547-4D10-954C-6F19F75DB5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{119E884D-1547-4D10-954C-6F19F75DB5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{119E884D-1547-4D10-954C-6F19F75DB5E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AD6BD54-2CDB-40DF-A571-1B29FCC9573D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD6BD54-2CDB-40DF-A571-1B29FCC9573D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD6BD54-2CDB-40DF-A571-1B29FCC9573D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD6BD54-2CDB-40DF-A571-1B29FCC9573D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
